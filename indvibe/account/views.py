@@ -44,8 +44,9 @@ def signinpage(request):
         else:
             return render(request,'Signup.html')
     else:
-        return render(request, signin.html)
+        return render(request, 'signin.html')
 def userhome(request):
+    
     return render(request,'userhome.html')
 def logout(request):
     auth.logout(request)
